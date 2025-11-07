@@ -19,7 +19,7 @@
   "vars": {
     "NODE_ENV": "production",
     "VITE_PORT": "5173",
-    "APP_BASE_URL": "https://claude.nekro.ai"
+    "APP_BASE_URL": "https://claude.555123.xyz"
   },
   "env": {
     "development": {
