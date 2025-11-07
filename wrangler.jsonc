@@ -11,18 +11,18 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "claude-code-nexus-local",
-      "database_id": "local",
+      "database_name": "claude-code-nexus",
+      "database_id": "18df19cb-8329-4911-9c02-fffe47d65c7b",
       "migrations_dir": "drizzle"
     }
   ],
   "vars": {
-    "NODE_ENV": "development",
+    "NODE_ENV": "production",
     "VITE_PORT": "5173",
-    "APP_BASE_URL": "http://localhost:8787"
+    "APP_BASE_URL": "https://claude.nekro.ai"
   },
   "env": {
-    "production": {
+    "development": {
       "assets": {
         "binding": "ASSETS",
         "directory": "./dist/client"
@@ -30,15 +30,15 @@
       "d1_databases": [
         {
           "binding": "DB",
-          "database_name": "claude-code-nexus",
-          "database_id": "18df19cb-8329-4911-9c02-fffe47d65c7b",
+          "database_name": "claude-code-nexus-local",
+          "database_id": "local",
           "migrations_dir": "drizzle"
         }
       ],
       "vars": {
-        "NODE_ENV": "production",
+        "NODE_ENV": "development",
         "VITE_PORT": "5173",
-        "APP_BASE_URL": "https://claude.nekro.ai"
+        "APP_BASE_URL": "http://localhost:8787"
       }
     }
   }
