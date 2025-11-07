@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"npm:dev:backend\" \"npm:dev:frontend\"",
-    "dev:backend": "wrangler dev",
+    "dev:backend": "wrangler dev --env development",
     "dev:frontend": "vite --config frontend/vite.config.mts",
     "build": "pnpm generate:html && pnpm build:client && pnpm build:server",
     "build:client": "vite build --config frontend/vite.config.mts",
